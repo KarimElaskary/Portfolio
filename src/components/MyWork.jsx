@@ -6,7 +6,7 @@ import emages from '../assets/emages.png';
 
 const MyWork = () => {
   return (
-    <div className='py-[50px] mx-[10px] md:mx-[120px]'>
+    <div className='py-[50px] mx-[10%] md:mx-[120px]'>
       <div className='flex flex-col gap-4'>
         <h1 className='header3 md:header2 text-center md:text-start' id='my-work'>
           My Work

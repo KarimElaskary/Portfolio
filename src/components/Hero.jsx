@@ -3,7 +3,7 @@ import me from '../assets/me.jpg';
 
 const Hero = () => {
   return (
-    <section className='py-[50px] xl:py-[200px] mx-[10px] md:mx-[120px]'>
+    <section className='py-[50px] xl:py-[200px] mx-[10%] md:mx-[120px]'>
       <div className='flex flex-col items-center justify-center gap-6 h-full w-full'>
         <img src={me} alt='me' className='h-[200px] rounded-full ' />
         <h1 className='header3 md:header1 text-center mb-4'>Hi, I'm Karim Elaskary</h1>
