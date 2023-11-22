@@ -6,7 +6,7 @@ import linkedin from '../assets/linkedin.png';
 
 const Footer = () => {
   return (
-    <div className='py-[50px] mx-[10%] md:mx-[120px]'>
+    <footer className='py-[50px] mx-[10px] md:mx-[120px]'>
       <div className='flex flex-col items-center justify-center bg-[#121212] rounded-3xl'>
         <img src={left} alt='left' className='h-16 self-start' id='footer'/>
         <h3 className='header3'>Let's Talk!</h3>
@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
         <img src={right} alt='left' className='h-16 self-end' />
       </div>
-    </div>
+    </footer>
   );
 };
 
