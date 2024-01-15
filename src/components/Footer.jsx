@@ -3,6 +3,8 @@ import left from '../assets/left.png';
 import right from '../assets/right.png';
 import gmail from '../assets/gmail.png';
 import linkedin from '../assets/linkedin.png';
+import whatsapp from '../assets/whatsapp.png';
+import github from '../assets/github.png';
 
 const Footer = () => {
   return (
@@ -23,7 +25,19 @@ const Footer = () => {
             href='https://www.linkedin.com/in/karim-elaskary-428301237/'
             target='_blank'
           >
-            <img src={linkedin} alt='gmail' className='h-[30px] md:h-[48px]' />
+            <img src={linkedin} alt='linkedin' className='h-[30px] md:h-[48px]' />
+          </a>
+          <a
+            href='https://wa.me/+201221280748'
+            target='_blank'
+          >
+            <img src={whatsapp} alt='whatsapp' className='h-[30px] md:h-[48px]' />
+          </a>
+          <a
+            href='https://github.com/KarimElaskary/'
+            target='_blank'
+          >
+            <img src={github} alt='gmail' className='h-[30px] md:h-[48px]' />
           </a>
         </div>
         <img src={right} alt='left' className='h-16 self-end' />
