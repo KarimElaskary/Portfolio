@@ -40,7 +40,7 @@ const Footer = () => {
             <img src={github} alt='gmail' className='h-[30px] md:h-[48px]' />
           </a>
         </div>
-        <img src={right} alt='left' className='h-16 self-end' />
+        <img src={right} alt='right' className='h-16 self-end' />
       </div>
     </footer>
   );
