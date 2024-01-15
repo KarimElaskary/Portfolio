@@ -11,13 +11,13 @@ const Footer = () => {
     <footer className='py-[50px] mx-[10%] md:mx-[120px]'>
       <div className='flex flex-col items-center justify-center bg-[#121212] rounded-3xl'>
         <img src={left} alt='left' className='h-16 self-start' id='footer' />
-        <h3 className='header3'>Let's Talk!</h3>
+        <h3 className='header3 mt-[50px]'>Let's Talk!</h3>
         <p className='text-center mt-5 mb-12 paragraphing-md mx-[70px] md:mx-[120px] capitalize'>
           Interested in working together or have a question? Feel free to reach
           out. I'm here to help you turn your ideas into amazing digital
           realities. Looking forward to hearing from you soon!
         </p>
-        <div className='flex gap-4 mb-[20px] md:mb-0 flex-col md:flex-row justify-center items-center'>
+        <div className='flex gap-4 mb-[50px] flex-col md:flex-row justify-center items-center'>
           <a href='mailto:karimelaskary1@gmail.com'>
             <img src={gmail} alt='gmail' className='h-[30px] md:h-[48px]' />
           </a>
