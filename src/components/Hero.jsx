@@ -1,6 +1,6 @@
 import React from 'react';
 import me from '../assets/me.jpg';
-import karimelaskary from '../assets/karimelaskary.pdf';
+import KarimElaskaryCV from '../assets/KarimElaskaryCV.pdf';
 
 const Hero = () => {
   return (
@@ -18,8 +18,8 @@ const Hero = () => {
           innovative projects
         </p>
         <a
-          href={karimelaskary}
-          download={'../assets/karimelaskary.pdf'}
+          href={KarimElaskaryCV}
+          download={'KarimElaskary\'s CV'}
           className='bg-gradient-to-r from-[#50CAE4] to-[#9B5CFF] text-white font-bold mt-[40px] py-4 px-6 rounded-full shadow-lg transform transition-all duration-500 ease-in-out hover:scale-110 hover:brightness-110 hover:animate-pulse active:animate-bounce">
   Keep holding'
         >
