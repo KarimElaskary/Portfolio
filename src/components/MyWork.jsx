@@ -1,7 +1,7 @@
 import React from 'react'
 import Work from './Work'
 import todo from '../assets/todo.png'
-import hydra from '../assets/hydra.png'
+import selhono from '../assets/selhono.png'
 import emages from '../assets/emages.png'
 import FinanceX from '../assets/FinanceX.png'
 
@@ -14,10 +14,10 @@ const MyWork = () => {
       link: 'https://emages.vercel.app/',
     },
     {
-      title: 'HydraVR',
-      description: 'Responive Design For HydraVR',
-      image: hydra,
-      link: 'https://hydra-vr.vercel.app/',
+      title: 'Selhono',
+      description: 'Responive Design For Selhono',
+      image: selhono,
+      link: 'https://selhono-green.vercel.app/',
     },
     {
       title: 'To-Do',
