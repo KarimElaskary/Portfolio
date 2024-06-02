@@ -12,9 +12,7 @@
     @apply text-white font-primary;
   }
 }
-html {
-  scroll-behavior: smooth;
-}
+
 body {
   background-color: black;
 }
