@@ -1,11 +1,21 @@
-import React from 'react';
-import me from '../assets/me.jpg';
-import KarimElaskaryCV from '../assets/KarimElaskaryCV.pdf';
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import me from '../assets/me.jpg'
+import KarimElaskaryCV from '../assets/KarimElaskaryCV.pdf'
 
 const Hero = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
     <section className='py-[50px] xl:py-[200px] mx-[10%] md:mx-[120px]'>
-      <div className='flex flex-col items-center justify-center gap-6 h-full w-full'>
+      <div
+        className='flex flex-col items-center justify-center gap-6 h-full w-full'
+        data-aos='fade-down'
+        data-aos-duration='1500'
+      >
         <img src={me} alt='me' className='h-[200px] rounded-full ' />
         <h1 className='header3 md:header1 text-center mb-4'>
           Hi, I'm Karim Elaskary
@@ -19,7 +29,7 @@ const Hero = () => {
         </p>
         <a
           href={KarimElaskaryCV}
-          download={'KarimElaskary\'s CV'}
+          download={"KarimElaskary's CV"}
           className='bg-gradient-to-r from-[#50CAE4] to-[#9B5CFF] text-white font-bold mt-[40px] py-4 px-6 rounded-full shadow-lg transform transition-all duration-500 ease-in-out hover:scale-110 hover:brightness-110 hover:animate-pulse active:animate-bounce">
   Keep holding'
         >
@@ -27,7 +37,7 @@ const Hero = () => {
         </a>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

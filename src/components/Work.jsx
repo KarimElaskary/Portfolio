@@ -1,12 +1,24 @@
-import React from 'react';
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Work = ({ title, description, image, link }) => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
-    <div className='flex flex-col md:flex-row bg-[#3B3B3B] mb-[40px] p-8 justify-between rounded-3xl mx-[10%] md:mx-0'>
+    <div
+      data-aos='zoom-in'
+      data-aos-duration='1000'
+      className='flex flex-col md:flex-row bg-[#3B3B3B] mb-[40px] p-8 justify-between rounded-3xl mx-[10%] md:mx-0'
+    >
       <div className='flex flex-col items-center md:items-start justify-between order-2 md:order-1'>
         <div className='flex flex-col gap-4 items-center md:items-start'>
           <h3 className='header3 text-center md:text-left'>{title}</h3>
-          <p className='paragraphing-sm md:mr-[68px] text-center md:text-left'>{description}</p>
+          <p className='paragraphing-sm md:mr-[68px] text-center md:text-left'>
+            {description}
+          </p>
         </div>
         <a href={link} className='btn my-[20px] md:my-0' target='_blank'>
           Try Demo
@@ -20,7 +32,7 @@ const Work = ({ title, description, image, link }) => {
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Work;
+export default Work
