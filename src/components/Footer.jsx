@@ -27,7 +27,7 @@ const Footer = () => {
           out. I'm here to help you turn your ideas into amazing digital
           realities. Looking forward to hearing from you soon!
         </p>
-        <div className='flex gap-4 mb-[50px] flex-col md:flex-row justify-center items-center'>
+        <div className='flex gap-4 mb-[50px] flex-wrap md:flex-row justify-center items-center'>
           <a href='mailto:karimelaskary1@gmail.com'>
             <img src={gmail} alt='gmail' className='h-[30px] md:h-[48px]' />
           </a>
