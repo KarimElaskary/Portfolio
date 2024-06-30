@@ -41,7 +41,7 @@ const Footer = () => {
               className='h-[30px] md:h-[48px]'
             />
           </a>
-          <a href='https://wa.me/+201221280748' target='_blank'>
+          <a href='https://wa.me/+201040597698' target='_blank'>
             <img
               src={whatsapp}
               alt='whatsapp'
