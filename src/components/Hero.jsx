@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import me from '../assets/me.jpg'
+import me from '../assets/me_hero.jpg'
 import KarimElaskaryCV from '../assets/KarimElaskaryCV.pdf'
 
 const Hero = () => {
