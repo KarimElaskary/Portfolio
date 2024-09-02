@@ -8,7 +8,7 @@ const MyWork = () => {
   const Data = [
     {
       title: 'Chatting',
-      description: 'Responive Design For FinanceX',
+      description: 'Live chat application with your frineds built with ReactJS and Firebase to implement auth',
       image: Chatting,
       link: 'https://react-firebase-chat-olive.vercel.app//',
     },
