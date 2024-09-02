@@ -2,11 +2,9 @@ import Work from './Work'
 import todo from '../assets/todo.png'
 import selhono from '../assets/selhono.png'
 import emages from '../assets/emages.png'
-import FinanceX from '../assets/FinanceX.png'
+import Chatting from '../assets/Chatting.png'
 
 const MyWork = () => {
-
-
   const Data = [
     {
       title: 'Emages',
@@ -27,18 +25,15 @@ const MyWork = () => {
       link: 'https://todo-nine-flame.vercel.app/',
     },
     {
-      title: 'FinanceX',
+      title: 'Chatting',
       description: 'Responive Design For FinanceX',
-      image: FinanceX,
-      link: 'https://finance-x-sage.vercel.app/',
+      image: Chatting,
+      link: 'https://react-firebase-chat-olive.vercel.app//',
     },
   ]
 
   return (
-    <div
-
-      className='py-[50px] mx-[10%] md:mx-[120px]'
-    >
+    <div className='py-[50px] mx-[10%] md:mx-[120px]'>
       <div className='flex flex-col gap-4'>
         <h1
           className='header3 md:header2 text-center md:text-start'
