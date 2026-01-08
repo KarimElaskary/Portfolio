@@ -51,8 +51,23 @@ body {
 }
 
 .gradient-text {
-  background-image: linear-gradient(to right, #FFE074, #50CAE4, #9B5CFF);
+  background-image: linear-gradient(to right, #2e6f40, rgb(43, 143, 201));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+/* Swiper Overrides */
+:root {
+  --swiper-theme-color: #2e6f40;
+  --swiper-navigation-size: 30px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #2e6f40 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #2e6f40 !important;
 }

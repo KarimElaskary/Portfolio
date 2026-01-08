@@ -1,64 +1,99 @@
-import Work from './Work'
-import todo from '../assets/todo.png'
-import selhono from '../assets/selhono.png'
-import emages from '../assets/emages.png'
-import Chatting from '../assets/Chatting.png'
+import Work from "./Work";
+import todo from "../assets/todo.png";
+import selhono from "../assets/selhono.png";
+import emages from "../assets/emages.png";
+import Chatting from "../assets/Chatting.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import { Link } from "react-router-dom";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const MyWork = () => {
   const Data = [
     {
-      title: 'Chatting',
-      description: 'Live chat application with your frineds built with ReactJS and Firebase to implement auth',
+      title: "Chatting",
+      description:
+        "Live chat application with your frineds built with ReactJS and Firebase to implement auth",
       image: Chatting,
-      link: 'https://react-firebase-chat-olive.vercel.app//',
+      link: "https://react-firebase-chat-olive.vercel.app//",
     },
     {
-      title: 'To-Do',
-      description: 'Organize Your Tasks With My To-Do',
+      title: "To-Do",
+      description: "Organize Your Tasks With My To-Do",
       image: todo,
-      link: 'https://todo-nine-flame.vercel.app/',
+      link: "https://todo-nine-flame.vercel.app/",
     },
     {
-      title: 'Emages',
-      description: 'Download High Quality Images',
+      title: "Emages",
+      description: "Download High Quality Images",
       image: emages,
-      link: 'https://emages.vercel.app/',
+      link: "https://emages.vercel.app/",
     },
-    {
-      title: 'Selhono',
-      description: 'Responive Design For Selhono',
-      image: selhono,
-      link: 'https://selhono-green.vercel.app/',
-    },
-  ]
+  ];
 
   return (
-    <div className='py-[50px] mx-[10%] md:mx-[120px]'>
-      <div className='flex flex-col gap-4'>
-        <h1
-          className='header3 md:header2 text-center md:text-start'
-          id='my-work'
-        >
+    <div className="py-[50px] mx-[10%] md:mx-[120px]" id="work">
+      <div className="flex flex-col gap-4">
+        <h1 className="header3 md:header2 text-center md:text-start">
           My Work
         </h1>
-        <p className='paragraphing-sm md:paragraphing-lg mb-[56px] text-center md:text-start capitalize'>
+        <p className="paragraphing-sm md:paragraphing-lg mb-[56px] text-center md:text-start capitalize">
           Here's a glimpse of some of my recent and exciting projects. Each of
           them reflects my focus on user-centered design and my commitment to
           excellence in user experience.
         </p>
-        <div>
-          {Data.map((project) => (
-            <Work
-              title={project.title}
-              description={project.description}
-              link={project.link}
-              image={project.image}
-            />
-          ))}
+
+        {/* Swiper Slider */}
+        <div className="w-full">
+          <Swiper
+            modules={[Navigation, Pagination]}
+            navigation
+            pagination={{ clickable: true }}
+            spaceBetween={15}
+            slidesPerView={1}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 2,
+              },
+            }}
+            loop={true}
+            className="mySwiper w-full pb-10"
+          >
+            {Data.map((project, index) => (
+              <SwiperSlide key={index} className="flex justify-center">
+                <div className="w-full flex justify-center">
+                  <Work
+                    title={project.title}
+                    description={project.description}
+                    link={project.link}
+                    image={project.image}
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
+        {/* Show All Projects Button */}
+        <div className="flex justify-center mt-10">
+          <Link
+            to="/all-projects"
+            className="btn text-white px-8 py-4 hover:bg-[#2e6f40] transition-colors duration-300"
+          >
+            Show All Projects
+          </Link>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default MyWork
+export default MyWork;

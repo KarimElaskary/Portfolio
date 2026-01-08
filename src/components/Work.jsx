@@ -1,38 +1,33 @@
-import { useEffect } from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import React from "react";
 
 const Work = ({ title, description, image, link }) => {
-  useEffect(() => {
-    AOS.init()
-  }, [])
-
   return (
-    <div
-      data-aos='zoom-in'
-      data-aos-duration='1000'
-      className='flex flex-col md:flex-row bg-[#3B3B3B] mb-[40px] p-8 justify-between rounded-3xl mx-[10%] md:mx-0'
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group relative flex flex-col gap-4 w-[350px] md:w-[600px] p-4 bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:bg-white/10 transition-all duration-300 hover:shadow-xl hover:shadow-[#2e6f40]/20 h-[50vh]"
     >
-      <div className='flex flex-col items-center md:items-start justify-between order-2 md:order-1'>
-        <div className='flex flex-col gap-4 items-center md:items-start'>
-          <h3 className='header3 text-center md:text-left'>{title}</h3>
-          <p className='paragraphing-sm md:mr-[68px] text-center md:text-left'>
-            {description}
-          </p>
-        </div>
-        <a href={link} className='btn my-[20px] md:my-0' target='_blank'>
-          Try Demo
-        </a>
-      </div>
-      <div className='order-1 md:order-2'>
+      <div className="overflow-hidden rounded-xl">
         <img
           src={image}
-          alt='Project pic'
-          className='w-[626px] xs:h-[300px] rounded-2xl mb-5 md:mb-0'
+          alt={title}
+          className="w-full h-[250px] object-cover transition-transform duration-500 group-hover:scale-110"
         />
       </div>
-    </div>
-  )
-}
 
-export default Work
+      <div className="flex flex-col gap-2 px-2">
+        <div className="flex items-center justify-between">
+          <h3 className="text-2xl font-bold text-white group-hover:text-[#2e6f40] transition-colors duration-300">
+            {title}
+          </h3>
+          <span className="text-white/50 group-hover:text-white transition-colors duration-300">
+            Visit ↗
+          </span>
+        </div>
+        <p className="text-[#B3B3B3] line-clamp-3">{description}</p>
+      </div>
+    </a>
+  );
+};
+export default Work;
