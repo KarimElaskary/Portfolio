@@ -2,6 +2,13 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import me from "../assets/me.jpg";
+import html from "../assets/html.png";
+import css from "../assets/css.png";
+import js from "../assets/javascript.png";
+import tailwind from "../assets/tailwindcss.png";
+import react from "../assets/react.png";
+import git from "../assets/git.png";
+import github from "../assets/github2.png";
 
 const AboutMe = () => {
   useEffect(() => {
@@ -34,16 +41,21 @@ const AboutMe = () => {
           />
         </div>
         <h3 className="header3 text-center md:text-left">My Skills</h3>
-        <div className="flex mt-[60px] mb-[23.5px] gap-[120px]">
-          <div className="flex flex-col gap-3">
-            <p className="paragraphing-lg">HTML 5</p>
-            <p className="paragraphing-lg">CSS 3</p>
-            <p className="paragraphing-lg">Tailwind CSS</p>
-          </div>
-          <div className="flex flex-col gap-3">
-            <p className="paragraphing-lg">Java Script</p>
-            <p className="paragraphing-lg">ReactJS</p>
-          </div>
+        <div className="flex flex-wrap justify-center md:justify-center gap-10 mt-[60px] mb-[23.5px]">
+          {[
+            { img: html, name: "HTML" },
+            { img: css, name: "CSS" },
+            { img: js, name: "JavaScript" },
+            { img: tailwind, name: "Tailwind CSS" },
+            { img: react, name: "React" },
+            { img: git, name: "Git" },
+            { img: github, name: "GitHub" },  
+          ].map((skill, index) => (
+            <div key={index} className="flex flex-col items-center gap-2">
+              <img src={skill.img} alt={skill.name} />
+              <p className="paragraphing text-center">{skill.name}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

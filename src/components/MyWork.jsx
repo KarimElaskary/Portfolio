@@ -1,8 +1,7 @@
 import Work from "./Work";
-import todo from "../assets/todo.png";
-import selhono from "../assets/selhono.png";
+import eatNsplit from "../assets/eatNsplit.png";
 import emages from "../assets/emages.png";
-import Chatting from "../assets/Chatting.png";
+import feastly from "../assets/feastly.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import { Link } from "react-router-dom";
@@ -13,17 +12,17 @@ import "swiper/css/pagination";
 const MyWork = () => {
   const Data = [
     {
-      title: "Chatting",
+      title: "Feastly",
       description:
-        "Live chat application with your frineds built with ReactJS and Firebase to implement auth",
-      image: Chatting,
-      link: "https://react-firebase-chat-olive.vercel.app//",
+        "A responsive, modern restaurant ordering interface built with React.js and Tailwind CSS, featuring dynamic Swiper sliders, reusable components, and a smooth, mobile-optimized menu browsing.",
+      image: feastly,
+      link: "https://feastly-five.vercel.app/",
     },
     {
-      title: "To-Do",
-      description: "Organize Your Tasks With My To-Do",
-      image: todo,
-      link: "https://todo-nine-flame.vercel.app/",
+      title: "Eat-N-Split",
+      description: "Eat-N-Split is a React-based web app that helps users split bills and track shared expenses among friends. It simplifies calculating who owes whom through an intuitive, interactive interface.",
+      image: eatNsplit,
+      link: "https://eat-n-split-blue-six.vercel.app/",
     },
     {
       title: "Emages",
