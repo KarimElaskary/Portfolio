@@ -27,7 +27,7 @@ const Hero = () => {
           <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-center mb-4">
             Hi, I'm Karim Elaskary
           </h1>
-          <p className="paragraphing-sm md:paragraphing-lg text-center capitalize max-w-2xl">
+          <p className="paragraphing-sm md:paragraphing-lg text-center max-w-2xl">
             Frontend Developer with strong experience building clean,
             responsive, and user‑centric web interfaces. Skilled in JavaScript,
             React.js, and Tailwind CSS, with a focus on performance, component

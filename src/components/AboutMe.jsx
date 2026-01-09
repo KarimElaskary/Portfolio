@@ -20,7 +20,7 @@ const AboutMe = () => {
       </h2>
       <div>
         <div className="flex items-center flex-col md:flex-row justify-center">
-          <p className="paragraphing-sm md:paragraphing-lg text-center md:text-left text-white md:mr-[85px] capitalize mb-[40px] md:mb-0">
+          <p className="paragraphing-sm md:paragraphing-lg text-center md:text-left text-white md:mr-[85px] mb-[40px] md:mb-0">
             I am a Junior Front-End developer using React Skilled in
             implementing responsive user interfaces, experienced in transforming
             designs into high quality code and optimizing performance. Dedicated

@@ -22,7 +22,7 @@ const Footer = () => {
       >
         <img src={left} alt="left" className="h-16 self-start" />
         <h3 className="header3 mt-[50px]">Let's Talk!</h3>
-        <p className="text-center mt-5 mb-12 paragraphing-md mx-[70px] md:mx-[120px] capitalize">
+        <p className="text-center mt-5 mb-12 paragraphing-md mx-[70px] md:mx-[120px]">
           Interested in working together or have a question? Feel free to reach
           out. I'm here to help you turn your ideas into amazing digital
           realities. Looking forward to hearing from you soon!

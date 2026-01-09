@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Work from "./components/Work";
 import todo from "./assets/todo.png";
-import selhono from "./assets/selhono.png";
 import emages from "./assets/emages.png";
 import Chatting from "./assets/Chatting.png";
 
@@ -29,12 +28,6 @@ const AllProjects = () => {
       description: "Download High Quality Images",
       image: emages,
       link: "https://emages.vercel.app/",
-    },
-    {
-      title: "Selhono",
-      description: "Ecommerce website for selling clothes",
-      image: selhono,
-      link: "https://selhono-xii.vercel.app/",
     },
   ];
 
