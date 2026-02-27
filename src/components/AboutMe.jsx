@@ -47,7 +47,7 @@ const AboutMe = () => {
             { img: html, name: "HTML" },
             { img: css, name: "CSS" },
             { img: js, name: "JavaScript" },
-            { img: ts, name: "TypeScript" },
+            // { img: ts, name: "TypeScript" },
             { img: tailwind, name: "Tailwind CSS" },
             { img: react, name: "React" },
             { img: git, name: "Git" },
