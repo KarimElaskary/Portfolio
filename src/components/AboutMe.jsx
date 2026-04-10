@@ -5,11 +5,14 @@ import me from "../assets/me.jpg";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import js from "../assets/javascript.png";
-import ts from "../assets/typescript.png";
+// import ts from "../assets/typescript.png";
 import tailwind from "../assets/tailwindcss.png";
 import react from "../assets/react.png";
 import git from "../assets/git.png";
 import github from "../assets/github2.png";
+import redux from "../assets/redux.png";
+import antd from "../assets/antd.png";
+// import nextjs from "../assets/nextjs.png";
 
 const AboutMe = () => {
   useEffect(() => {
@@ -49,9 +52,12 @@ const AboutMe = () => {
             { img: js, name: "JavaScript" },
             // { img: ts, name: "TypeScript" },
             { img: tailwind, name: "Tailwind CSS" },
+            { img: antd, name: "Ant Design" },
             { img: react, name: "React" },
+            // { img: nextjs, name: "Next.js" },
             { img: git, name: "Git" },
-            { img: github, name: "GitHub" },  
+            { img: github, name: "GitHub" },
+            { img: redux, name: "Redux Toolkit / RTK Query" },
           ].map((skill, index) => (
             <div key={index} className="flex flex-col items-center gap-2">
               <img src={skill.img} alt={skill.name} />
