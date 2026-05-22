@@ -5,7 +5,7 @@ import me from "../assets/me.jpg";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import js from "../assets/javascript.png";
-// import ts from "../assets/typescript.png";
+import ts from "../assets/typescript.png";
 import tailwind from "../assets/tailwindcss.png";
 import react from "../assets/react.png";
 import git from "../assets/git.png";
@@ -50,7 +50,7 @@ const AboutMe = () => {
             { img: html, name: "HTML" },
             { img: css, name: "CSS" },
             { img: js, name: "JavaScript" },
-            // { img: ts, name: "TypeScript" },
+            { img: ts, name: "TypeScript" },
             { img: tailwind, name: "Tailwind CSS" },
             { img: antd, name: "Ant Design" },
             { img: react, name: "React" },

@@ -2,9 +2,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import me from "../assets/me_hero.jpg";
-
 import Particles from "./Particles";
-import DownloadButton from "./DownloadButton";
 
 const Hero = () => {
   useEffect(() => {
@@ -35,7 +33,6 @@ const Hero = () => {
             ideas into polished digital experiences and continuously improving
             through learning.
           </p>
-          <DownloadButton />
         </div>
       </section>
       <Particles
